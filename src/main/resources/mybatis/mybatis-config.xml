@@ -17,7 +17,7 @@
             </dataSource>
         </environment>
     </environments>
-    <mappers>        <!--这是告诉Mybatis区哪找持久化类的映射文件，对于在src下的文件直接写文件名,如果在某包下，则要写明路径,如：com/mybatistest/config/User.xml-->
+    <mappers>        <!--这是告诉Mybatis去哪找持久化类的映射文件，对于在src下的文件直接写文件名,如果在某包下，则要写明路径,如：com/mybatistest/config/User.xml-->
         <mapper resource="mybatis/mapper/mysql.xml"/>
     </mappers>
 </configuration>
