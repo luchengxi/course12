@@ -1,0 +1,177 @@
+2020-06-08 10:04:57.098 logback [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-06-08 10:04:57.127 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 10:04:57.128 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 10:04:57.129 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 10:04:57.131 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 10:04:57.286 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Opening JDBC Connection
+2020-06-08 10:04:57.841 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - Created connection 1971519316.
+2020-06-08 10:04:57.842 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7582ff54]
+2020-06-08 10:04:57.856 logback [main] DEBUG com.course.loginCase - ==>  Preparing: select * from logincase where id=? 
+2020-06-08 10:04:57.930 logback [main] DEBUG com.course.loginCase - ==> Parameters: 1(Integer)
+2020-06-08 10:04:58.002 logback [main] DEBUG com.course.loginCase - <==      Total: 1
+2020-06-08 10:04:58.076 logback [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: best-match
+2020-06-08 10:04:58.105 logback [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+2020-06-08 10:04:58.112 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-06-08 10:04:58.150 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-08 10:04:58.154 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8088
+2020-06-08 10:04:58.167 logback [main] DEBUG o.a.h.i.c.HttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8088
+2020-06-08 10:04:58.174 logback [main] DEBUG o.a.h.i.c.HttpClientConnectionOperator - Connection established 127.0.0.1:54026<->127.0.0.1:8088
+2020-06-08 10:04:58.177 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request POST /user/login HTTP/1.1
+2020-06-08 10:04:58.180 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+2020-06-08 10:04:58.183 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+2020-06-08 10:04:58.187 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /user/login HTTP/1.1
+2020-06-08 10:04:58.188 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 38
+2020-06-08 10:04:58.189 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: application/json
+2020-06-08 10:04:58.190 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Encoding: utf-8
+2020-06-08 10:04:58.192 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: localhost:8088
+2020-06-08 10:04:58.192 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+2020-06-08 10:04:58.192 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2020-06-08 10:04:58.193 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2020-06-08 10:04:58.196 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /user/login HTTP/1.1[\r][\n]"
+2020-06-08 10:04:58.196 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 38[\r][\n]"
+2020-06-08 10:04:58.197 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+2020-06-08 10:04:58.199 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Encoding: utf-8[\r][\n]"
+2020-06-08 10:04:58.201 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8088[\r][\n]"
+2020-06-08 10:04:58.202 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2020-06-08 10:04:58.204 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2020-06-08 10:04:58.204 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-06-08 10:04:58.204 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+2020-06-08 10:04:58.205 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "{"password":"123","userName":"[0xe5][0xbc][0xa0][0xe4][0xb8][0x89]"}"
+2020-06-08 10:05:00.035 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2020-06-08 10:05:00.036 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: login=true[\r][\n]"
+2020-06-08 10:05:00.036 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2020-06-08 10:05:00.036 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2020-06-08 10:05:00.036 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Mon, 08 Jun 2020 02:05:00 GMT[\r][\n]"
+2020-06-08 10:05:00.036 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Keep-Alive: timeout=60[\r][\n]"
+2020-06-08 10:05:00.036 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2020-06-08 10:05:00.037 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+2020-06-08 10:05:00.037 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "4[\r][\n]"
+2020-06-08 10:05:00.037 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "true[\r][\n]"
+2020-06-08 10:05:00.043 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 
+2020-06-08 10:05:00.044 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: login=true
+2020-06-08 10:05:00.044 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+2020-06-08 10:05:00.044 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+2020-06-08 10:05:00.044 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Mon, 08 Jun 2020 02:05:00 GMT
+2020-06-08 10:05:00.045 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << Keep-Alive: timeout=60
+2020-06-08 10:05:00.045 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+2020-06-08 10:05:00.058 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+2020-06-08 10:05:00.072 logback [main] DEBUG o.a.h.c.p.ResponseProcessCookies - Cookie accepted [login="true", version:0, domain:localhost, path:/user, expiry:null]
+2020-06-08 10:05:00.076 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+2020-06-08 10:05:00.076 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+2020-06-08 10:05:00.077 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8088] can be kept alive for 60.0 seconds
+2020-06-08 10:05:00.077 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8088][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-08 10:05:00.084 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7582ff54]
+2020-06-08 10:05:00.085 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7582ff54]
+2020-06-08 10:05:00.086 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - Returned connection 1971519316 to pool.
+2020-06-08 10:05:00.126 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 10:05:00.126 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 10:05:00.126 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 10:05:00.127 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 10:05:00.160 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Opening JDBC Connection
+2020-06-08 10:05:00.252 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - Created connection 90045638.
+2020-06-08 10:05:00.252 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@55dfcc6]
+2020-06-08 10:05:00.254 logback [main] DEBUG com.course.addUserCase - ==>  Preparing: select * from addusercase where expected=? 
+2020-06-08 10:05:00.257 logback [main] DEBUG com.course.addUserCase - ==> Parameters: addUserCase(String)
+2020-06-08 10:05:00.261 logback [main] DEBUG com.course.addUserCase - <==      Total: 1
+2020-06-08 10:05:00.266 logback [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: best-match
+2020-06-08 10:05:00.267 logback [main] DEBUG o.a.h.c.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: localhost][path: /user][expiry: null] match [localhost:8088/user/addUser]
+2020-06-08 10:05:00.268 logback [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+2020-06-08 10:05:00.269 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-08 10:05:00.270 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-08 10:05:00.270 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Stale connection check
+2020-06-08 10:05:00.274 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[read] I/O error: Read timed out"
+2020-06-08 10:05:00.274 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request POST /user/addUser HTTP/1.1
+2020-06-08 10:05:00.275 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+2020-06-08 10:05:00.275 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+2020-06-08 10:05:00.276 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /user/addUser HTTP/1.1
+2020-06-08 10:05:00.276 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 102
+2020-06-08 10:05:00.276 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: application/json
+2020-06-08 10:05:00.279 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Encoding: utf-8
+2020-06-08 10:05:00.282 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: localhost:8088
+2020-06-08 10:05:00.283 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+2020-06-08 10:05:00.283 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2020-06-08 10:05:00.283 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Cookie: login=true
+2020-06-08 10:05:00.283 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Cookie2: $Version=1
+2020-06-08 10:05:00.284 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2020-06-08 10:05:00.284 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /user/addUser HTTP/1.1[\r][\n]"
+2020-06-08 10:05:00.284 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 102[\r][\n]"
+2020-06-08 10:05:00.285 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+2020-06-08 10:05:00.285 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Encoding: utf-8[\r][\n]"
+2020-06-08 10:05:00.285 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8088[\r][\n]"
+2020-06-08 10:05:00.285 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2020-06-08 10:05:00.285 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2020-06-08 10:05:00.285 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Cookie: login=true[\r][\n]"
+2020-06-08 10:05:00.285 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Cookie2: $Version=1[\r][\n]"
+2020-06-08 10:05:00.286 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-06-08 10:05:00.286 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+2020-06-08 10:05:00.286 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "{"password":"123","isDelete":"no","sex":"18","permission":"1","userName":"[0xe9][0x98][0xbf][0xe6][0x8b][0x89][0xe4][0xbc][0xaf][0xe9][0x85][0x8b][0xe9][0x95][0xbf]","age":"18"}"
+2020-06-08 10:05:00.375 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2020-06-08 10:05:00.376 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2020-06-08 10:05:00.376 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2020-06-08 10:05:00.376 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Mon, 08 Jun 2020 02:05:00 GMT[\r][\n]"
+2020-06-08 10:05:00.376 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Keep-Alive: timeout=60[\r][\n]"
+2020-06-08 10:05:00.376 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2020-06-08 10:05:00.376 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+2020-06-08 10:05:00.377 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "6d[\r][\n]"
+2020-06-08 10:05:00.377 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"id":0,"userName":"[0xe9][0x98][0xbf][0xe6][0x8b][0x89][0xe4][0xbc][0xaf][0xe9][0x85][0x8b][0xe9][0x95][0xbf]","password":"123","age":"18","sex":"18","permission":"1","isDelete":"no"}[\r][\n]"
+2020-06-08 10:05:00.377 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 
+2020-06-08 10:05:00.377 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+2020-06-08 10:05:00.377 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+2020-06-08 10:05:00.377 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Mon, 08 Jun 2020 02:05:00 GMT
+2020-06-08 10:05:00.378 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << Keep-Alive: timeout=60
+2020-06-08 10:05:00.378 logback [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+2020-06-08 10:05:00.378 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+2020-06-08 10:05:00.379 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+2020-06-08 10:05:00.379 logback [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+2020-06-08 10:05:00.379 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8088] can be kept alive for 60.0 seconds
+2020-06-08 10:05:00.379 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8088][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-08 10:05:00.382 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@55dfcc6]
+2020-06-08 10:05:00.384 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@55dfcc6]
+2020-06-08 10:05:00.384 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - Returned connection 90045638 to pool.
+2020-06-08 10:05:00.907 logback [Finalizer] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 16:59:49.305 logback [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-06-08 16:59:49.360 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 16:59:49.360 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 16:59:49.360 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 16:59:49.361 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 16:59:49.567 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Opening JDBC Connection
+2020-06-08 16:59:50.767 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - Created connection 94157402.
+2020-06-08 16:59:50.769 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@59cba5a]
+2020-06-08 16:59:50.786 logback [main] DEBUG com.course.loginCase - ==>  Preparing: select * from logincase where id=? 
+2020-06-08 16:59:51.109 logback [main] DEBUG com.course.loginCase - ==> Parameters: 1(Integer)
+2020-06-08 16:59:51.186 logback [main] DEBUG com.course.loginCase - <==      Total: 1
+2020-06-08 16:59:51.230 logback [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: best-match
+2020-06-08 16:59:51.248 logback [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+2020-06-08 16:59:51.252 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-06-08 16:59:51.282 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-08 16:59:51.287 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8088
+2020-06-08 16:59:51.303 logback [main] DEBUG o.a.h.i.c.HttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8088
+2020-06-08 16:59:53.341 logback [main] DEBUG o.a.h.i.c.HttpClientConnectionOperator - Connect to localhost/127.0.0.1:8088 timed out. Connection will be retried using another IP address
+2020-06-08 16:59:53.342 logback [main] DEBUG o.a.h.i.c.HttpClientConnectionOperator - Connecting to localhost/0:0:0:0:0:0:0:1:8088
+2020-06-08 16:59:55.351 logback [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: Shutdown connection
+2020-06-08 16:59:55.352 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection discarded
+2020-06-08 16:59:55.353 logback [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+2020-06-08 16:59:55.354 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-06-08 16:59:55.404 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 16:59:55.405 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 16:59:55.405 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 16:59:55.405 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2020-06-08 16:59:55.428 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Opening JDBC Connection
+2020-06-08 16:59:55.487 logback [main] DEBUG o.a.i.d.pooled.PooledDataSource - Created connection 48361312.
+2020-06-08 16:59:55.487 logback [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2e1ef60]
+2020-06-08 16:59:55.488 logback [main] DEBUG com.course.addUserCase - ==>  Preparing: select * from addusercase where expected=? 
+2020-06-08 16:59:55.489 logback [main] DEBUG com.course.addUserCase - ==> Parameters: addUserCase(String)
+2020-06-08 16:59:55.493 logback [main] DEBUG com.course.addUserCase - <==      Total: 1
+2020-06-08 16:59:55.494 logback [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: best-match
+2020-06-08 16:59:55.495 logback [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+2020-06-08 16:59:55.495 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-06-08 16:59:55.495 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-08 16:59:55.495 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8088
+2020-06-08 16:59:55.496 logback [main] DEBUG o.a.h.i.c.HttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8088
+2020-06-08 16:59:57.501 logback [main] DEBUG o.a.h.i.c.HttpClientConnectionOperator - Connect to localhost/127.0.0.1:8088 timed out. Connection will be retried using another IP address
+2020-06-08 16:59:57.502 logback [main] DEBUG o.a.h.i.c.HttpClientConnectionOperator - Connecting to localhost/0:0:0:0:0:0:0:1:8088
+2020-06-08 16:59:59.507 logback [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: Shutdown connection
+2020-06-08 16:59:59.508 logback [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection discarded
+2020-06-08 16:59:59.509 logback [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: Close connection
+2020-06-08 16:59:59.509 logback [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-06-08 17:00:00.157 logback [Finalizer] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.

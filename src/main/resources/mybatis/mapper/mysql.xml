@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course">
+    <!--登录验证-->
+    <select id="loginCase" resultType="com.course.model.loginCase">
+        select * from logincase where id=#{id}
+    </select>
+    <!--添加用户信息-->
+    <select id="addUserCase" resultType="com.course.model.addUserCase" >
+        select * from addusercase where expected=#{addUserCase}
+    </select>
+
+</mapper>
