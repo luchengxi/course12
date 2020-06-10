@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="test" duration-ms="5509" started-at="2020-06-10T08:11:46Z" finished-at="2020-06-10T08:11:52Z">
+    <groups>
+    </groups>
+    <test name="login" duration-ms="5509" started-at="2020-06-10T08:11:46Z" finished-at="2020-06-10T08:11:52Z">
+      <class name="com.course.config.BeforeTestPrepare">
+        <test-method status="PASS" signature="beforeSuit()[pri:0, instance:com.course.config.BeforeTestPrepare@573f2bb1]" name="beforeSuit" is-config="true" duration-ms="1736" started-at="2020-06-10T08:11:44Z" description="套件测试开始，测试准备工作，Httpclient，拼接URL" finished-at="2020-06-10T08:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuit -->
+        <test-method status="PASS" signature="afterSuit()[pri:0, instance:com.course.config.BeforeTestPrepare@573f2bb1]" name="afterSuit" is-config="true" duration-ms="1" started-at="2020-06-10T08:11:52Z" description="套件测试结束" finished-at="2020-06-10T08:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuit -->
+      </class> <!-- com.course.config.BeforeTestPrepare -->
+      <class name="com.course.cases.LoginTest">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.course.cases.LoginTest@5ae9a829]" name="loginTest" duration-ms="5064" started-at="2020-06-10T08:11:46Z" description="登录接口测试" finished-at="2020-06-10T08:11:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.course.cases.LoginTest -->
+      <class name="com.course.cases.AddUserTest">
+        <test-method status="PASS" signature="adduserTes()[pri:0, instance:com.course.cases.AddUserTest@6d8a00e3]" name="adduserTes" duration-ms="420" started-at="2020-06-10T08:11:51Z" description="添加用户接口测试" finished-at="2020-06-10T08:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adduserTes -->
+      </class> <!-- com.course.cases.AddUserTest -->
+    </test> <!-- login -->
+  </suite> <!-- test -->
+</testng-results>

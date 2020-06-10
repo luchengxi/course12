@@ -24,11 +24,11 @@ public class LoginTest {
         SqlSession sqlsession = MybatisSqlSession.getSqlsession();
         loginCase loginCase = sqlsession.selectOne("loginCase",1);
         System.out.println(loginCase.toString());
-        TestConfig.log.info("登录接口"+TestConfig.loginUrl);
+        TestConfig.log.info("登录接口地址"+TestConfig.loginUrl);
 
         //接口调用，获取结果
         String result = getResult(loginCase);
-        TestConfig.log.info("期望结果为"+loginCase.getExpected());
+        TestConfig.log.info("期望结果"+loginCase.getExpected());
         //验证结果
         Assert.assertEquals(loginCase.getExpected(),result);
         TestConfig.log.info("接口结果验证成功，测试通过");

@@ -96,7 +96,11 @@
     </dependencies>
 
     <properties>
+        <!-- 文件拷贝时的编码 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- 编译时的编码 -->
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
     </properties>
 
     <build>
@@ -107,12 +111,13 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
+                    <!---maven本身控制台输出中文乱码解决-->
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
                     <suiteXmlFiles>
                         <suiteXmlFile>
                             ./src/main/resources/testNg.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
-                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
         </plugins>
