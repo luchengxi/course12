@@ -24,7 +24,7 @@ public class LoginTest {
         SqlSession sqlsession = MybatisSqlSession.getSqlsession();
         loginCase loginCase = sqlsession.selectOne("loginCase",1);
         System.out.println(loginCase.toString());
-        TestConfig.log.info("登录接口测试地址"+TestConfig.loginUrl);
+        TestConfig.log.info("登录接口"+TestConfig.loginUrl);
 
         //接口调用，获取结果
         String result = getResult(loginCase);
@@ -54,7 +54,7 @@ public class LoginTest {
         HttpResponse httpResponse = TestConfig.closeableHttpClient.execute(post);
         TestConfig.log.info("执行post请求");
         String result = EntityUtils.toString(httpResponse.getEntity());
-        TestConfig.log.info("接口返回结果为"+result);
+        TestConfig.log.info("接口返回结果"+result);
         //遍历cookies，方便判断cookie是否获取到
         List<Cookie> cookies = TestConfig.basicCookieStore.getCookies();
         for (Cookie cookie:cookies) {

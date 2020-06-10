@@ -95,6 +95,10 @@
         </dependency>
     </dependencies>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -108,6 +112,7 @@
                             ./src/main/resources/testNg.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
         </plugins>

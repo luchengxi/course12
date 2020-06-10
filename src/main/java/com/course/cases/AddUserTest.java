@@ -19,7 +19,7 @@ public class AddUserTest {
         //从数据库中获取测试参数
         SqlSession sqlSession = MybatisSqlSession.getSqlsession();
         addUserCase addUserCase = sqlSession.selectOne("addUserCase", "addUserCase");
-        TestConfig.log.info("添加用户信息接口测试地址为"+TestConfig.addUserUrl);
+        TestConfig.log.info("添加用户的接口地址"+TestConfig.addUserUrl);
         TestConfig.log.info("用例参数为"+addUserCase.toString());
 
         //获取实际结果
